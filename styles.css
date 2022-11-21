@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+section.top {
+  background-color: #1f2937;
+}
+
+header {
+  display: flex;
+  max-width: 45%;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+header div#header {
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: bolder;
+  float: left;
+}
+
+header nav ul.header-links {
+  list-style: none;
+  font-size: 18px;
+}
+
+li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+/* HERO SECTION */
+
+h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+}
+
+figcaption {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  color: #686868;
+  max-width: 120px;
+  text-align: center;
+}
+
+.hero {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  max-width: 45%;
+  margin: auto;
+}
+
+.subtext {
+  display: block;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+button {
+  background-color: #3882f6;
+  padding: 0.2em 1.2em 0.2em 1.2em;
+  color: white;
+  border-radius: 0.3em;
+  border: none;
+  cursor: pointer;
+}
+
+.placeholder-image {
+  background-color: grey;
+  width: 100%;
+  margin-left: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeholder-image#image {
+  width: 100%;
+  height: 100%;
+}
+
+/* INFORMATION SECTION */
+
+.information-container {
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+#information {
+  text-align: center;
+}
+
+.picture-container {
+  display: flex;
+  justify-content: center;
+  max-width: 55%;
+  margin: auto;
+}
+
+.picture-container figure {
+  display: inline-block;
+  margin: auto;
+}
+
+div.pic {
+  border: solid;
+  border-color: #3882f6;
+  border-radius: 0.6em;
+  width: 120px;
+  height: 120px;
+}
+
+/* QUOTE SECTION */
+
+.quote {
+  background-color: #e5e7eb;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-style: italic;
+  font-size: 36px;
+  color: #1f2937;
+  text-align: justify;
+}
+
+blockquote {
+  max-width: 40%;
+  margin: auto;
+}
+
+section.quote figcaption#who-said-it {
+  max-width: 40%;
+  margin: auto;
+  padding-top: 1em;
+  justify-content: end;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* CALL TO ACTION  */
+
+.call-to-action-container {
+  width: 50%;
+  margin: auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  background-color: #3882f6;
+  color: white;
+  display: flex;
+  padding: 1em 3em 1em 3em;
+  border-radius: 0.5em;
+}
+
+#call-to-action {
+  margin-left: 5em;
+}
+
+section.call-to-action-container div h3 {
+  margin-bottom: 0;
+}
+
+section.call-to-action-container div p {
+  margin-top: 0;
+}
+
+#sign-up {
+  display: flex;
+  margin: auto;
+}
+
+#sign-up button {
+  background-color: #3882f6;
+  padding: 0.2em 1.2em 0.2em 1.2em;
+  border-style: solid;
+  border-radius: 0.3em;
+  border-width: 0.1em;
+  border-color: white;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #1f2937;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .hero {
+    padding-top: 1em;
+  }
+
+  ul.header-links {
+    text-align: center;
+    padding: 0px;
+  }
+
+  li {
+    padding: 0px;
+    margin: 0;
+  }
+
+  div.hero {
+    display: block;
+  }
+
+  div.placeholder-image {
+    height: 250px;
+    margin: 2em 0px 0px 0px;
+  }
+
+  div.picture-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .picture-container figure {
+    display: inline-block;
+    margin: auto;
+  } */
+
+  blockquote {
+    font-size: 20px;
+    max-width: 70%;
+    /* margin: auto; */
+  }
+
+  .call-to-action-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #call-to-action {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
